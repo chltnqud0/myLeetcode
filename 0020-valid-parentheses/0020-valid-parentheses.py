@@ -2,7 +2,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
         list_s = list(s)
         dict_match = {"{": "}", "[": "]", "(": ")"}
-        list_temp = list()
+        list_temp = []
         while list_s:
             temp = list_s.pop()
             if temp in dict_match:
